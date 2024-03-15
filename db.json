@@ -1,0 +1,114 @@
+{
+  "room": [
+    {
+      "id": "room1",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar1.png",
+      "name": "Room 1",
+      "status": "online 7 min ago"
+    },
+    {
+      "id": "room2",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "name": "Room 2",
+      "status": "active"
+    },
+    {
+      "id": "dev_chat",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "name": "Development Chat",
+      "status": "active"
+    },
+    {
+      "id": "general",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar4.png",
+      "name": "General Chat",
+      "status": "online 1 h ago"
+    },
+    {
+      "id": "support",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar5.png",
+      "name": "Support Chat",
+      "status": "active"
+    },
+    {
+      "id": "design_room",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar6.png",
+      "name": "Design Room",
+      "status": "active"
+    },
+    {
+      "id": "private_chat",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar7.png",
+      "name": "Private Chat",
+      "status": "active"
+    },
+    {
+      "id": "programming_hub",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar8.png",
+      "name": "Programming Hub",
+      "status": "active"
+    }
+  ],
+  "user": [
+    {
+      "id": "user1",
+      "name": "John",
+      "surname": "Doe",
+      "lastOnlineOn": "2024-03-15T08:00:00Z"
+    },
+    {
+      "id": "user2",
+      "name": "Alice",
+      "surname": "Smith",
+      "lastOnlineOn": "2024-03-14T12:30:00Z"
+    },
+    {
+      "id": "user3",
+      "name": "Bob",
+      "surname": "Johnson",
+      "lastOnlineOn": "2024-03-13T18:45:00Z"
+    },
+    {
+      "id": "user4",
+      "name": "Emily",
+      "surname": "Brown",
+      "lastOnlineOn": "2024-03-12T21:15:00Z"
+    },
+    {
+      "id": "user5",
+      "name": "Michael",
+      "surname": "Wilson",
+      "lastOnlineOn": "2024-03-11T09:20:00Z"
+    },
+    {
+      "id": "user6",
+      "name": "Sophia",
+      "surname": "Martinez",
+      "lastOnlineOn": "2024-03-10T14:00:00Z"
+    },
+    {
+      "id": "user7",
+      "name": "James",
+      "surname": "Taylor",
+      "lastOnlineOn": "2024-03-09T16:40:00Z"
+    },
+    {
+      "id": "user8",
+      "name": "Olivia",
+      "surname": "Anderson",
+      "lastOnlineOn": "2024-03-08T10:10:00Z"
+    },
+    {
+      "id": "user9",
+      "name": "Daniel",
+      "surname": "Thomas",
+      "lastOnlineOn": "2024-03-07T20:05:00Z"
+    },
+    {
+      "id": "user10",
+      "name": "Emma",
+      "surname": "Garcia",
+      "lastOnlineOn": "2024-03-06T11:50:00Z"
+    }
+  ]
+}
