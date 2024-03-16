@@ -1,17 +1,48 @@
-import { NgFor } from '@angular/common';
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
-import { ChatRoom } from '../model/chat-room';
-import { RoomsListComponent } from './rooms-list.component';
-import { SearchComponent } from './search.component';
-import { ChatRoomService } from '../service/chat-room.service';
+import { ChatRoom } from '../../model/chat-room';
+import { RoomsListComponent } from './rooms-list/rooms-list.component';
+import { SubmitTextComponent } from './submit-text.component';
+import { ChatRoomService } from '../../service/chat-room.service';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-chat-rooms',
   standalone: true,
-  imports: [RoomsListComponent, SearchComponent],
+  imports: [RoomsListComponent, SubmitTextComponent],
+  styles: `
+  .people-list {
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.people-list {
+    width: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 7,
+}
+
+@media only screen and (max-width: 767px) {
+    .people-list {
+        height: 465px;
+        width: 100%;
+        overflow-x: auto;
+        background: #fff;
+        left: -400px;
+        display: none
+    }
+    .people-list.open {
+        left: 0
+    }
+}
+
+`,
   template: `<div id="plist" class="people-list">
-  <app-search (submitText)="submitText($event)"></app-search>
+  <app-submit-text (submitText)="submitText($event)"></app-submit-text>
   <app-rooms-list [rooms]="filteredRooms" (chooseRoom)="chooseRoom($event)"></app-rooms-list>
 </div>`
 })
@@ -26,16 +57,15 @@ export class ChatRoomsComponent implements OnInit, OnDestroy{
   }
 
   ngOnInit(): void {
-    this.roomsSub = this._chatRoomService.getAllChatRooms().subscribe(
-      (response) => {
+    this.roomsSub = this._chatRoomService.getAll().subscribe({
+      next: (response) => {
         this.rooms = response;
         this.filteredRooms = this.filterChatRoomsByName(this.rooms, "");
       },
-      (error) =>
-      {
-        console.log(error);
+      error: (err) => {
+        console.log(err);
       }
-      );
+    });
   }
 
   ngOnDestroy(): void {

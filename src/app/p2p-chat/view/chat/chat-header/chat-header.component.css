@@ -1,0 +1,52 @@
+.chat-header img {
+    float: left;
+    border-radius: 40px;
+    width: 40px
+}
+.chat-header {
+    padding: 15px 20px;
+    border-bottom: 2px solid #f4f7f6
+}
+.chat-header .chat-about {
+    float: left;
+    padding-left: 10px
+}
+
+@media only screen and (max-width: 767px) {
+    .chat-app .chat .chat-header {
+        border-radius: 0.55rem 0.55rem 0 0
+    }
+}
+
+.online,
+.offline,
+.me {
+    margin-right: 2px;
+    font-size: 8px;
+    vertical-align: middle
+}
+
+.online {
+    color: #86c541
+}
+
+.offline {
+    color: #e47297
+}
+
+.me {
+    color: #1d8ecd
+}
+
+.float-right {
+    float: right
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}

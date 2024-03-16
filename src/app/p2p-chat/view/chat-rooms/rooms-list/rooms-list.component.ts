@@ -1,12 +1,13 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ChatRoom } from '../model/chat-room';
+import { ChatRoom } from '../../../model/chat-room';
 
 @Component({
   selector: 'app-rooms-list',
   standalone: true,
   imports: [NgFor, NgIf],
-  template: `<ul class="list-unstyled chat-list mt-2 mb-0">
+  styleUrl: "rooms-list.component.css",
+  template: `<ul class="list-unstyled chat-list mt-2 mb-2" style="overflow-y: auto; height: 75vh">
                 <li *ngFor="let room of rooms" class="clearfix" (click)="chooseRoom.emit(room.id)">
                     <img src="{{room.imageUrl}}" alt="avatar">
                     <div class="about">

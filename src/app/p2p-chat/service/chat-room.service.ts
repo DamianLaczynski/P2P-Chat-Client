@@ -11,22 +11,22 @@ export class ChatRoomService {
   private readonly apiUrl = 'http://localhost:3000/room';
   constructor(private _http: HttpClient) { }
   
-  getAllChatRooms(): Observable<ChatRoom[]>
+  getAll(): Observable<ChatRoom[]>
   {
     return this._http.get<ChatRoom[]>(`${this.apiUrl}`);
   }
-
-  getChatRoom(id: string): Observable<ChatRoom>
+  
+  get(id: string): Observable<ChatRoom>
   {
     return this._http.get<ChatRoom>(`${this.apiUrl}/${id}`);
   }
 
-  updateChatRoom(id: string, chatRoom: ChatRoom): Observable<ChatRoom>
+  update(id: string, chatRoom: ChatRoom): Observable<ChatRoom>
   {
     return this._http.put<ChatRoom>(`${this.apiUrl}/${id}`, chatRoom);
   }
 
-  deleteChatRoom(id: string): Observable<unknown>
+  delete(id: string): Observable<unknown>
   {
     return this._http.delete<unknown>(`${this.apiUrl}/${id}`);
   }
