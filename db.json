@@ -54,61 +54,193 @@
       "id": "user1",
       "name": "John",
       "surname": "Doe",
-      "lastOnlineOn": "2024-03-15T08:00:00Z"
+      "lastOnlineOn": "2024-03-15T08:00:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png"
     },
     {
       "id": "user2",
       "name": "Alice",
       "surname": "Smith",
-      "lastOnlineOn": "2024-03-14T12:30:00Z"
+      "lastOnlineOn": "2024-03-14T12:30:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar3.png"
     },
     {
       "id": "user3",
       "name": "Bob",
       "surname": "Johnson",
-      "lastOnlineOn": "2024-03-13T18:45:00Z"
+      "lastOnlineOn": "2024-03-13T18:45:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar4.png"
     },
     {
       "id": "user4",
       "name": "Emily",
       "surname": "Brown",
-      "lastOnlineOn": "2024-03-12T21:15:00Z"
+      "lastOnlineOn": "2024-03-12T21:15:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar5.png"
     },
     {
       "id": "user5",
       "name": "Michael",
       "surname": "Wilson",
-      "lastOnlineOn": "2024-03-11T09:20:00Z"
+      "lastOnlineOn": "2024-03-11T09:20:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar6.png"
     },
     {
       "id": "user6",
       "name": "Sophia",
       "surname": "Martinez",
-      "lastOnlineOn": "2024-03-10T14:00:00Z"
+      "lastOnlineOn": "2024-03-10T14:00:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar7.png"
     },
     {
       "id": "user7",
       "name": "James",
       "surname": "Taylor",
-      "lastOnlineOn": "2024-03-09T16:40:00Z"
+      "lastOnlineOn": "2024-03-09T16:40:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar8.png"
     },
     {
       "id": "user8",
       "name": "Olivia",
       "surname": "Anderson",
-      "lastOnlineOn": "2024-03-08T10:10:00Z"
+      "lastOnlineOn": "2024-03-08T10:10:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar1.png"
     },
     {
       "id": "user9",
       "name": "Daniel",
       "surname": "Thomas",
-      "lastOnlineOn": "2024-03-07T20:05:00Z"
+      "lastOnlineOn": "2024-03-07T20:05:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png"
     },
     {
       "id": "user10",
       "name": "Emma",
       "surname": "Garcia",
-      "lastOnlineOn": "2024-03-06T11:50:00Z"
+      "lastOnlineOn": "2024-03-06T11:50:00Z",
+      "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar3.png"
     }
-  ]
+  ],
+  "message": [
+      {
+        "id": "msg1",
+        "user": {
+          "id": "user1",
+          "name": "John",
+          "surname": "Doe",
+          "lastOnlineOn": "2024-03-15T08:00:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png"
+        },
+        "content": "Hello everyone!",
+        "sendTime": "2024-03-15T08:05:00Z"
+      },
+      {
+        "id": "msg2",
+        "user": {
+          "id": "user2",
+          "name": "Alice",
+          "surname": "Smith",
+          "lastOnlineOn": "2024-03-14T12:30:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar3.png"
+        },
+        "content": "Good morning!",
+        "sendTime": "2024-03-15T09:20:00Z"
+      },
+      {
+        "id": "msg3",
+        "user": {
+          "id": "user3",
+          "name": "Bob",
+          "surname": "Johnson",
+          "lastOnlineOn": "2024-03-13T18:45:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar4.png"
+        },
+        "content": "Has anyone seen the new update?",
+        "sendTime": "2024-03-15T10:45:00Z"
+      },
+      {
+        "id": "msg4",
+        "user": {
+          "id": "user4",
+          "name": "Emily",
+          "surname": "Brown",
+          "lastOnlineOn": "2024-03-12T21:15:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar5.png"
+        },
+        "content": "I'm looking for someone to play chess with.",
+        "sendTime": "2024-03-15T11:30:00Z"
+      },
+      {
+        "id": "msg5",
+        "user": {
+          "id": "user5",
+          "name": "Michael",
+          "surname": "Wilson",
+          "lastOnlineOn": "2024-03-11T09:20:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar6.png"
+        },
+        "content": "Happy Friday, everyone!",
+        "sendTime": "2024-03-15T12:00:00Z"
+      },
+      {
+        "id": "msg6",
+        "user": {
+          "id": "user6",
+          "name": "Sophia",
+          "surname": "Martinez",
+          "lastOnlineOn": "2024-03-10T14:00:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar7.png"
+        },
+        "content": "Does anyone have any recommendations for a good book?",
+        "sendTime": "2024-03-15T13:15:00Z"
+      },
+      {
+        "id": "msg7",
+        "user": {
+          "id": "user7",
+          "name": "James",
+          "surname": "Taylor",
+          "lastOnlineOn": "2024-03-09T16:40:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar8.png"
+        },
+        "content": "What's everyone up to this weekend?",
+        "sendTime": "2024-03-15T14:30:00Z"
+      },
+      {
+        "id": "msg8",
+        "user": {
+          "id": "user8",
+          "name": "Olivia",
+          "surname": "Anderson",
+          "lastOnlineOn": "2024-03-08T10:10:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar1.png"
+        },
+        "content": "I just finished a coding project!",
+        "sendTime": "2024-03-15T15:45:00Z"
+      },
+      {
+        "id": "msg9",
+        "user": {
+          "id": "user9",
+          "name": "Daniel",
+          "surname": "Thomas",
+          "lastOnlineOn": "2024-03-07T20:05:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png"
+        },
+        "content": "Anyone interested in joining a study group?",
+        "sendTime": "2024-03-15T16:00:00Z"
+      },
+      {
+        "id": "msg10",
+        "user": {
+          "id": "user10",
+          "name": "Emma",
+          "surname": "Garcia",
+          "lastOnlineOn": "2024-03-06T11:50:00Z",
+          "profileImageUrl": "https://bootdey.com/img/Content/avatar/avatar3.png"
+        },
+        "content": "I'm loving the new features!",
+        "sendTime": "2024-03-15T16:30:00Z"
+      }
+    ]    
 }
